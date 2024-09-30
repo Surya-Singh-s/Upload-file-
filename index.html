@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category h2 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .subcategory {
+            margin-left: 20px;
+        }
+        .subcategory label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Document Upload Sections</h1>
+
+<form id="uploadForm" action="upload.php" method="POST" enctype="multipart/form-data">
+    <!-- Competitive Exam Section -->
+    <div class="category">
+        <h2>Competitive Exam</h2>
+        <div class="subcategory">
+            <h3>JEE</h3>
+            <label for="jeeFile">Upload JEE Document:</label>
+            <input type="file" id="jeeFile" name="jeeFile" accept=".pdf,.docx,.txt">
+        </div>
+        <div class="subcategory">
+            <h3>NEET</h3>
+            <label for="neetFile">Upload NEET Document:</label>
+            <input type="file" id="neetFile" name="neetFile" accept=".pdf,.docx,.txt">
+        </div>
+    </div>
+
+    <!-- Graduation Section -->
+    <div class="category">
+        <h2>Graduation</h2>
+        <div class="subcategory">
+            <h3>BTech CSE</h3>
+            <label for="btechCseFile">Upload BTech CSE Document:</label>
+            <input type="file" id="btechCseFile" name="btechCseFile" accept=".pdf,.docx,.txt">
+        </div>
+        <div class="subcategory">
+            <h3>BA</h3>
+            <label for="baFile">Upload BA Document:</label>
+            <input type="file" id="baFile" name="baFile" accept=".pdf,.docx,.txt">
+        </div>
+        <div class="subcategory">
+            <h3>BSc</h3>
+            <label for="bscFile">Upload BSc Document:</label>
+            <input type="file" id="bscFile" name="bscFile" accept=".pdf,.docx,.txt">
+        </div>
+    </div>
+
+    <!-- CA/CS/CMA Section -->
+    <div class="category">
+        <h2>CA/CS/CMA</h2>
+        <div class="subcategory">
+            <h3>CA</h3>
+            <label for="caFile">Upload CA Document:</label>
+            <input type="file" id="caFile" name="caFile" accept=".pdf,.docx,.txt">
+        </div>
+        <div class="subcategory">
+            <h3>CS</h3>
+            <label for="csFile">Upload CS Document:</label>
+            <input type="file" id="csFile" name="csFile" accept=".pdf,.docx,.txt">
+        </div>
+        <div class="subcategory">
+            <h3>CMA</h3>
+            <label for="cmaFile">Upload CMA Document:</label>
+            <input type="file" id="cmaFile" name="cmaFile" accept=".pdf,.docx,.txt">
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Upload Documents</button>
+</form>
+
+</body>
+</html>
